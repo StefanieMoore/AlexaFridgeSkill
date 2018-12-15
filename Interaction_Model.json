@@ -1,0 +1,148 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my fridge",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "how_old",
+                    "slots": [
+                        {
+                            "name": "food",
+                            "type": "AMAZON.Food"
+                        },
+                        {
+                            "name": "fridge",
+                            "type": "AMAZON.DeviceType"
+                        }
+                    ],
+                    "samples": [
+                        "How long has the {food} been in my {fridge}",
+                        "How old is the {food} "
+                    ]
+                },
+                {
+                    "name": "whats_in_fridge",
+                    "slots": [
+                        {
+                            "name": "fridge",
+                            "type": "AMAZON.DeviceType"
+                        }
+                    ],
+                    "samples": [
+                        "Tell me what's in my {fridge}",
+                        "Tell me everything in my {fridge}",
+                        "What's in my {fridge}"
+                    ]
+                },
+                {
+                    "name": "put_food_in",
+                    "slots": [
+                        {
+                            "name": "food",
+                            "type": "AMAZON.Food"
+                        },
+                        {
+                            "name": "fridge",
+                            "type": "AMAZON.DeviceType"
+                        }
+                    ],
+                    "samples": [
+                        "I just bought {food}",
+                        "put in {food} ",
+                        "Can I add {food} to my  {fridge} ",
+                        "I want to add {food} to my  {fridge} ",
+                        "Add the {food} to my  {fridge} ",
+                        "Put the {food} in my  {fridge} ",
+                        "Put {food} in my  {fridge}"
+                    ]
+                },
+                {
+                    "name": "take_food_out",
+                    "slots": [
+                        {
+                            "name": "food",
+                            "type": "AMAZON.Food"
+                        },
+                        {
+                            "name": "fridge",
+                            "type": "AMAZON.DeviceType"
+                        }
+                    ],
+                    "samples": [
+                        "ok i want to throw away the {food}",
+                        "I want to get rid of {food}",
+                        "I want to throw away {food}",
+                        "I want to take out {food}",
+                        "Take {food} out of fridge",
+                        "Take out {food}",
+                        "Get rid of {food}",
+                        "Get rid of {food} for me",
+                        "I'm getting rid of {food}",
+                        "I'm throwing out {food}",
+                        "I'm throwing {food} away",
+                        "Delete {food} from my {fridge}",
+                        "Delete {food}",
+                        "I want to take {food} out of my {fridge} "
+                    ]
+                },
+                {
+                    "name": "close_fridge",
+                    "slots": [
+                        {
+                            "name": "fridge",
+                            "type": "AMAZON.DeviceType"
+                        }
+                    ],
+                    "samples": [
+                        "Close my {fridge} please",
+                        "No thanks close my {fridge} ",
+                        "No thank you close my {fridge} ",
+                        "Close my {fridge} "
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "AMAZON.DeviceType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "freezer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ice box"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "refrigerator "
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
